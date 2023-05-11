@@ -110,7 +110,7 @@
         <form class="container con1" style="max-width: 600px;">
             <h1>Book an Appointment</h1>
             <p>Department :
-                <select name="Dept" id="dept">
+                <select name="Dept" id="dept" required>
                     <option value="dept"> Select a Department</option>
                     <option value="dept"> Internal Medicine</option>
                     <option value="dept"> Neurology & Neurosurgery</option>
@@ -135,7 +135,7 @@
                 </select>
             </p>
             <p>Doctor : &emsp;
-                <select name="doc" id="doc">
+                <select name="doc" id="doc" required>
                     <option value="doc">Select Doctor</option>
                     <option value="doc">Dr. Om Prasad</option>
                     <option value="doc">Dr. Rishu Gupta</option>
@@ -144,8 +144,8 @@
                     <option value="doc">Dr. Krish Raj</option>
                 </select>
             </p>
-            <p>Date : &emsp;<input type="date"></p>
-            <p>Time : &emsp;<input type="time"></p>
+            <p>Date : &emsp;<input type="date" required></p>
+            <p>Time : &emsp;<input type="time" required></p>
             <p align="center"><button type="submit" align="center">Book Appointment</button></p>
         </form>
     </div>
@@ -174,15 +174,15 @@
                     <form>
                         <div class="row">
                             <div class="col"><label for="number">Number</label></div>
-                            <div class="col"><input type="number" id="number" placeholder="+91 XXXXXXXXXX"></div>
+                            <div class="col"><input type="number" id="number" placeholder="+91 XXXXXXXXXX" required></div>
                         </div><br>
                         <div class="row">
                             <div class="col"><label for="email">E-Mail</label></div>
-                            <div class="col"><input type="email" id="email" placeholder="example@email.com"></div>
+                            <div class="col"><input type="email" id="email" placeholder="example@email.com" required></div>
                         </div><br>
                         <div class="row">
                             <div class="col"><label for="password">Password</label></div>
-                            <div class="col"><input type="password" id="password" placeholder="Password"></div>
+                            <div class="col"><input type="password" id="password" placeholder="Password" required></div>
                         </div>
                     </form>
                 </div>
